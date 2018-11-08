@@ -128,7 +128,7 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  /*height: 50px;*/ /* NOTE: by removing this, i fix the filter boxes pushing outside this section. */
+  height: 50px; /* NOTE: by removing this, i fix the filter boxes pushing outside this section. */
   background-color: #3397DB;
   align-items: center;
 }
@@ -297,16 +297,29 @@ nav h1 a {
 }
 
 /* ====================== Responsiveness ====================== */
-/* top 5 screen sizes of 2018 */
-/* mobile */
-@media screen and (min-width: ) {
+/* top 2 screen sizes in each category of 2018, worldwide.
+ * from https://www.hobo-web.co.uk/best-screen-size/ */
+
+/* mobile 360x640, 375x667 */
+/* for this breakpoint, I want the restaurant listing and restaurant details
+ * to be all in 1 column, centered on the screen. container should be the same width as the rest of the cards. Margins should increase
+ * until reaches next breakpoint. */
+@media screen and (max-width: 768) {
 
 }
-/* tablet */
-@media screen and (min-width: ) {
+/* tablet 768x1024, 800x1280 */
+/* for this breakpoint, I want the restaurant listing and restaurant details
+ * to be in 3 columns with narrow margins and padding. Remember that outer
+ * card borders need to align with borders of container. Both margins, cards,
+ * and container should increase until reaches next breakpoint. */
+@media screen and (min-width: 769) and (max-width: 1366) {
 
 }
-/* desktop */
-@media screen and (min-width: ) {
+/* desktop 1366x768, 1920x1080 */
+/* for this breakpoint, I want the restaurant listing and restaurant details
+ * to be in 3 columns with wider margins and padding. this is the final
+ * Breakpoint. Only the outer left and right margins of containers will
+ * increase.) */
+@media screen and (min-width: 1367) {
 
 }
