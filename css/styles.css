@@ -47,6 +47,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+
 /* ====================== Accessibility A11y ====================== */
 a.skip {
   position:absolute;
@@ -69,6 +70,7 @@ a.skip:focus, a.skip:active {
     font-size: 1.2em;
     z-index: 999;
 }
+
 /* ====================== Navigation ====================== */
 
 nav {
@@ -95,40 +97,38 @@ nav h1 a {
     margin: 0;
     width: calc(50% - 80px);
 }
-
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
 }
-
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
 }
-
 /* Add a color to all links inside the list */
 #breadcrumb li a {
     color: #0275d8;
     text-decoration: none;
 }
-
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
 }
+
 /* ====================== Map ====================== */
 #map {
   height: 400px;
   width: 100%;
   background-color: #ccc;
 }
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  /*height: 50px;*/ /* NOTE: by removing this, i fix the filter boxes pushing outside this section. */
   background-color: #3397DB;
   align-items: center;
 }
@@ -294,4 +294,19 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/* ====================== Responsiveness ====================== */
+/* top 5 screen sizes of 2018 */
+/* mobile */
+@media screen and (min-width: ) {
+
+}
+/* tablet */
+@media screen and (min-width: ) {
+
+}
+/* desktop */
+@media screen and (min-width: ) {
+
 }
