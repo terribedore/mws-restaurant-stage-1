@@ -11,7 +11,7 @@ body {
 	margin: 0;
 	position:relative;
 }
-ul, li {
+ul,li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
@@ -27,11 +27,11 @@ a:hover, a:focus {
 a img{
 	border: none 0px #fff;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display: block;
 }
 #maincontent {
@@ -48,31 +48,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-transform: uppercase;
 }
 
-/* ====================== Accessibility A11y ====================== */
-a.skip {
-  position:absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-	z-index: -999;
-}
-a.skip:focus, a.skip:active {
-    left: 0;
-    top: 0;
-    width: 200px;
-    height: auto;
-    overflow: auto;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.2em;
-    z-index: 999;
-}
-
 /* ====================== Navigation ====================== */
-
 nav {
   width: 100%;
   height: 80px;
@@ -296,14 +272,40 @@ nav h1 a {
   color: #666;
 }
 
+/* ====================== Accessibility A11y ====================== */
+a.skip {
+  position:absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+	z-index: -999;
+}
+a.skip:focus, a.skip:active {
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: auto;
+    overflow: auto;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
+
 /* ====================== Responsiveness ====================== */
 /* top 2 screen sizes in each category of 2018, worldwide.
- * from https://www.hobo-web.co.uk/best-screen-size/ */
+ * from https://www.hobo-web.co.uk/best-screen-size/
+ */
 
 /* mobile 360x640, 375x667 */
 /* for this breakpoint, I want the restaurant listing and restaurant details
- * to be all in 1 column, centered on the screen. container should be the same width as the rest of the cards. Margins should increase
- * until reaches next breakpoint. */
+ * to be all in 1 column, centered on the screen. container should be the
+ * same width as the rest of the cards. Margins should increase until
+ * reaches next breakpoint.
+ */
 @media screen and (max-width: 768) {
 
 }
@@ -311,15 +313,17 @@ nav h1 a {
 /* for this breakpoint, I want the restaurant listing and restaurant details
  * to be in 3 columns with narrow margins and padding. Remember that outer
  * card borders need to align with borders of container. Both margins, cards,
- * and container should increase until reaches next breakpoint. */
+ * and container should increase until reaches next breakpoint.
+ */
 @media screen and (min-width: 769) and (max-width: 1366) {
 
 }
 /* desktop 1366x768, 1920x1080 */
 /* for this breakpoint, I want the restaurant listing and restaurant details
  * to be in 3 columns with wider margins and padding. this is the final
- * Breakpoint. Only the outer left and right margins of containers will
- * increase.) */
+ * breakpoint. Only the outer left and right margins of containers will
+ * increase.)
+ */
 @media screen and (min-width: 1367) {
 
 }
