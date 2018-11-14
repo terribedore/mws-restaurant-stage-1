@@ -38,13 +38,14 @@ self.addEventListener('install', function(event) {
   );
 });
 
-/* Service Worker Listener */
+/* Cache function */
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
       .then(function(response) {
         // Cache hit - return response
         if (response) {
+          console.log('Found ', event.request, ' in cache');
           return response;
         }
 
